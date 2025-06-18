@@ -24,21 +24,53 @@
       </div>
     </header>
 
-    <article class="post">
-        <header class="post-header">
+    <main>
+      <div class="container">
+        <article class="post">
+          <header class="post-header">
             <div class="user-info">
-                <img src="./images/avatar-vangogh.jpg" alt="Profile avatar of Vangogh" class="user-img">
-                <div class="user-details">
-                    <h2 class="user-name">Vincent Vangogh</h2>
-                    <p class="user-location">Zundert, Netherlands</p>
-                </div>
+              <img
+                src="./images/avatar-vangogh.jpg"
+                alt="Profile avatar of Vangogh"
+                class="user-img"
+              />
+              <div class="user-details">
+                <h2 class="user-name">Vincent Vangogh</h2>
+                <p class="user-location">Zundert, Netherlands</p>
+              </div>
             </div>
-        </header>
+          </header>
 
-        <img src="./images/avatar-vangogh.jpg" alt="A painting by Vincent Van Gogh">
-    </article>
+          <figure class="post-figure">
+            <img
+              src="./images/post-vangogh.jpg"
+              alt="A painting by Vincent Van Gogh"
+              class="post-img"
+            />
+            <figcaption class="visually-hidden">
+              Vincent Vangogh’s painting post
+            </figcaption>
+          </figure>
 
-
+          <div class="post-content">
+            
+            <section class="post-actions">
+              <img src="./images/icon-heart.png" alt="Like Post" class="icon" />
+              <img
+                src="./images/icon-comment.png"
+                alt="Comment on post"
+                class="icon"
+              />
+              <img src="./images/icon-dm.png" alt="Share Post" class="icon" />
+            </section>
+            <p class="likes-text"><strong>21,492 likes</strong></p>
+            <p class="post-caption">
+              <strong>vangogh1853</strong> just painted this from memory...
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
 
     <script src="./index.js"></script>
   </body>
