@@ -5,7 +5,7 @@ const posts = [
     location: 'Zundert, Netherlands',
     avatar: 'images/avatar-vangogh.jpg',
     post: 'images/post-vangogh.jpg',
-    comment: 'just took a few mushrooms lol',
+    comment: 'just picked a few mushrooms in my garden',
     likes: 21,
   },
   {
@@ -28,3 +28,43 @@ const posts = [
     likes: 152,
   },
 ];
+
+const feed = document.getElementById('feed');
+
+
+let feedHTML = '';
+
+for (let i = 0; i < posts.length; i++) {
+  const post = posts[i];
+
+  feedHTML += `
+    <article class="post">
+      <header class="post-header">
+        <div class="user-info">
+          <img src="${post.avatar}" alt="Avatar of ${post.name}" class="user-img" />
+          <div class="user-details">
+            <h2 class="user-name">${post.name}</h2>
+            <p class="user-location">${post.location}</p>
+          </div>
+        </div>
+      </header>
+
+      <img src="${post.post}" alt="Post by ${post.name}" class="post-img" />
+
+      <div class="post-content">
+        <section class="post-actions">
+          <img src="./images/icon-heart.png" alt="Like post" class="icon" />
+          <img src="./images/icon-comment.png" alt="Comment on post" class="icon" />
+          <img src="./images/icon-dm.png" alt="Share post" class="icon" />
+        </section>
+        <p class="likes-text"><strong>${post.likes} likes</strong></p>
+        <p class="post-caption">
+          <strong>${post.username}</strong> ${post.comment}
+        </p>
+      </div>
+    </article>
+  `;
+}
+
+
+feed.innerHTML = feedHTML;

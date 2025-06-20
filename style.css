@@ -42,6 +42,10 @@ body {
   width: 120px;
 }
 
+.post {
+  margin-bottom: 3rem;
+}
+
 .post-header {
   padding: 1rem 0;
 }
@@ -51,7 +55,7 @@ body {
   align-items: center;
   gap: 1.2rem;
   margin: 1rem 0;
-  padding: 1rem 3rem;
+  padding: 1rem 0rem;
 }
 
 .user-img {
@@ -108,6 +112,10 @@ body {
   font-size: 1.4rem;
   line-height: 1.5;
   padding: 0 2rem;
+}
+
+.text-wrapper {
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 600px) {
